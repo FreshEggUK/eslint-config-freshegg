@@ -6,7 +6,7 @@ module.exports = {
   extends: [
     'plugin:@typescript-eslint/recommended', // Uses rules from `@typescript-eslint/eslint-plugin`,
     'airbnb-typescript',
-    'plugin:@typescript-eslint/recommended-requiring-type-checking',
+    // 'plugin:@typescript-eslint/recommended-requiring-type-checking',
     // Layer in all the JS Rules
     './.eslintrc.js',
   ],
@@ -41,6 +41,16 @@ module.exports = {
     '@typescript-eslint/no-non-null-assertion': 'off',
     '@typescript-eslint/restrict-template-expressions': 'off',
     '@typescript-eslint/naming-convention': 'off',
+    '@typescript-eslint/await-thenable': 'error',
+    '@typescript-eslint/no-for-in-array': 'error',
+    'no-implied-eval': 'off',
+    '@typescript-eslint/no-implied-eval': 'error',
+    '@typescript-eslint/no-unnecessary-type-assertion': 'error',
+    '@typescript-eslint/no-unsafe-argument': 'error',
+    'require-await': 'off',
+    '@typescript-eslint/require-await': 'error',
+    '@typescript-eslint/restrict-plus-operands': 'error',
+    '@typescript-eslint/unbound-method': 'error',
     // this is covered by the typescript compiler, so we don't need it
     'no-undef': 'off',
     'no-shadow': 'off', // TS does it
