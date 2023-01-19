@@ -39,9 +39,8 @@ module.exports = {
     '@typescript-eslint/no-unsafe-assignment': 'off',
     '@typescript-eslint/no-unsafe-return': 'off',
     '@typescript-eslint/no-non-null-assertion': 'off',
-    '@typescript-eslint/no-unused-vars': 2,
-    "@typescript-eslint/restrict-template-expressions": "off",
-    "@typescript-eslint/naming-convention": "off",
+    '@typescript-eslint/restrict-template-expressions': 'off',
+    '@typescript-eslint/naming-convention': 'off',
     // this is covered by the typescript compiler, so we don't need it
     'no-undef': 'off',
     'no-shadow': 'off', // TS does it
