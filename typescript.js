@@ -51,6 +51,14 @@ module.exports = {
     '@typescript-eslint/require-await': 'error',
     '@typescript-eslint/restrict-plus-operands': 'error',
     '@typescript-eslint/unbound-method': 'error',
+    '@typescript-eslint/dot-notation': [
+      'error',
+      {
+        allowPattern: '',
+        allowKeywords: true,
+        allowPrivateClassPropertyAccess: false,
+      },
+    ],
     // this is covered by the typescript compiler, so we don't need it
     'no-undef': 'off',
     'no-shadow': 'off', // TS does it
