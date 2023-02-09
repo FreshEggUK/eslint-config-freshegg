@@ -45,7 +45,7 @@ For TypeScript projects, use `freshegg/typescript`.
 }
 ```
 
-TypeScript users will also need a `tsconfig.json` file in their project. An empty object (`{}`) or [my base](https://github.com/freshegg/dotfiles/blob/master/tsconfig.json) will do!
+TypeScript users will also need a `tsconfig.json` file in their project. An empty object (`{}`) 
 
 5. You can add two scripts to your package.json to lint and/or fix:
 
