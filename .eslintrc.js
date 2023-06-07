@@ -43,7 +43,19 @@ module.exports = {
         destructuring: 'all',
       },
     ],
-    'arrow-body-style': [2, 'as-needed'],
+    'import/no-extraneous-dependencies': [
+      'error',
+      {
+        devDependencies: [
+          '**/*.test.ts',
+          '**/*.test.tsx',
+          '**/*.config.ts',
+          '**/*.config.tsx',
+        ],
+      },
+    ],
+    'arrow-body-style': 'warn',
+    'jsx-quotes': ['error', 'prefer-double'],
     'no-unused-expressions': [
       'error',
       {
