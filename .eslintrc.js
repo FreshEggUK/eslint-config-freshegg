@@ -1,4 +1,5 @@
-// This is a patch so that eslint will load the plugins as dependencies. Otherwise we can to install EVERYTHING in th root project
+// Patch eslint to load plugins as dependencies, so projects do not need to manually install them.
+// See https://github.com/eslint/eslint/issues/3458
 require('@rushstack/eslint-patch/modern-module-resolution');
 
 module.exports = {
