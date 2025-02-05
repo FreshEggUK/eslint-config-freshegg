@@ -4,16 +4,12 @@ module.exports = {
     JSX: true,
   },
   extends: [
-    'plugin:@typescript-eslint/recommended', // Uses rules from `@typescript-eslint/eslint-plugin`,
-    'airbnb-typescript',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
-    // Layer in all the JS Rules
+    'airbnb-typescript',
     './.eslintrc.js',
   ],
-  // Typescript Extras
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint'],
-  // Then we add our own custom typescript rules
   rules: {
     // This allows us to use async function on addEventListener()
     '@typescript-eslint/no-misused-promises': [
