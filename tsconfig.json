@@ -1,5 +1,5 @@
 {
-	"include": ["./**/*"],
+	"include": ["./demo.*"],
 	"compilerOptions": {
 		"module": "esnext",
 		"target": "esnext",

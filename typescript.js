@@ -1,21 +1,13 @@
 module.exports = {
-  globals: {
-    React: true,
-    JSX: true,
-  },
   extends: [
-    'plugin:@typescript-eslint/recommended', // Uses rules from `@typescript-eslint/eslint-plugin`,
     'airbnb-typescript',
+    'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
-    // Layer in all the JS Rules
     './.eslintrc.js',
   ],
-  // Typescript Extras
   parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint'],
-  // Then we add our own custom typescript rules
   rules: {
-    // This allows us to use async function on addEventListener()
+    // Allows async function on addEventListener()
     '@typescript-eslint/no-misused-promises': [
       'error',
       {
@@ -62,6 +54,9 @@ module.exports = {
     // this is covered by the typescript compiler, so we don't need it
     'no-undef': 'off',
     'no-shadow': 'off', // TS does it
+    // Disable two old typescript-eslint rules that are never found
+    '@typescript-eslint/lines-between-class-members': 'off',
+    '@typescript-eslint/no-throw-literal': 'off',
   },
   parserOptions: {
     project: './tsconfig.json',
