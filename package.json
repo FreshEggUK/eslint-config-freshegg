@@ -13,7 +13,7 @@
     "prettier"
   ],
   "main": "index.js",
-  "repository": "git@github.com:FreshEggUK/eslint-config-freshegg.git",
+  "repository": "git+https://github.com/FreshEggUK/eslint-config-freshegg.git",
   "author": "Fresh Egg <development@freshegg.com >",
   "license": "MIT",
   "peerDependencies": {
